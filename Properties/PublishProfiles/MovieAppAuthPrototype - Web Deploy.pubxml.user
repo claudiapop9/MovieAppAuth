@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMoqsyg6vz0KljQmk9bSofwAAAAACAAAAAAADZgAAwAAAABAAAACWxteyQEJIDPV9fRmtgu0zAAAAAASAAACgAAAAEAAAAPiJDi37wpw8lA3q+eBbr4eAAAAAqjXSLHa0apuuZzKFEuop3xYBEvwkzI+JXnmV13+1+6fG2PFnFLmkjz5UM+4FZSAZwVvEbL5SkuzAZ6RNUVXfSUhSX+J3AhFNBkwj5A//CgaaDAUyc0DzYkntQBhWGvry7/YAxxdXgYizEQI80vfoi4fNKH38JgXV1hmUY7I5rVkUAAAA6M6Djiq6Lcw2olmy67gdv4w9TaE=</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:movieapp.database.windows.net,1433%3bInitial Catalog=moviedb%3bPersist Security Info=False%3bUser ID=claudia%3bPassword=MovieApp1%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
