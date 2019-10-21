@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MovieAppAuth.Data;
+using MovieAppAuth.Hubs;
 
 namespace MovieAppAuth
 {
@@ -37,6 +38,7 @@ namespace MovieAppAuth
             });
             services.AddRazorPages();
             services.AddProgressiveWebApp();
+            services.AddSignalR();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -66,6 +68,7 @@ namespace MovieAppAuth
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
+                endpoints.MapHub<ChatHub>("/chatHub");
             });
         }
     }

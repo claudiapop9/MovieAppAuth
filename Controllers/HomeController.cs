@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MovieAppAuth.Hubs;
 using MovieAppAuth.Models;
 using System.Diagnostics;
 
@@ -31,5 +32,6 @@ namespace MovieAppAuth.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }
