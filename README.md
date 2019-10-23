@@ -8,5 +8,5 @@ An ASP.Net Core MVC application with:
     * icons
     * manifest
     * deployed on Azure for https connection
-3. Data is saved using Azure SQL database;
+3. Data is saved in Azure SQL database;
 4. A chat implemented using SignalR;
